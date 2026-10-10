@@ -1,0 +1,22 @@
+# Default crawl settings. Any value can be overridden with a CLI flag.
+
+query: ""
+categories:
+  - cs.CL
+  - cs.AI
+
+max_results: 100
+page_size: 50
+
+# submittedDate | lastUpdatedDate | relevance
+sort_by: submittedDate
+sort_order: descending
+
+download_pdf: true
+output_dir: data
+
+# arXiv asks for >= 3 seconds between API calls
+request_delay: 3.0
+download_delay: 1.0
+timeout: 30
+max_retries: 3
